@@ -3,8 +3,10 @@ import React from "react";
 class Nav extends React.Component {
   render() {
     return (
-      <nav>
-        <h1>txrvi</h1>
+      <nav id="#home">
+        <h1>
+          <a href="#home">txrvi</a>
+        </h1>
         <ul>
           <li>
             <a href="#home">Home</a>

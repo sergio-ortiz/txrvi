@@ -4,21 +4,32 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.App {
+  height: 200vh;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   background: #333;
   color: #fff;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
+  text-decoration: none;
   margin: 5px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
 }
 
 ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -26,12 +37,12 @@ li {
   margin: 10px;
 }
 
-a {
+li a {
   text-decoration: none;
   color: #ccc;
 }
 
-a:hover {
+li a:hover {
   color: white;
   border-bottom: 1px solid white;
 }
