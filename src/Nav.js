@@ -3,7 +3,7 @@ import React from "react";
 class Nav extends React.Component {
   render() {
     return (
-      <nav id="#home">
+      <nav>
         <h1>
           <a href="#home">txrvi</a>
         </h1>
