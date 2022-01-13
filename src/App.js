@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Main from "./Main";
+import Prices from "./Prices";
 
 class App extends React.Component {
   render() {
@@ -8,6 +9,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main />
+        <Prices />
       </div>
     );
   }
