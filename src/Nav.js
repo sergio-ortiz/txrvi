@@ -9,7 +9,7 @@ class Nav extends React.Component {
         </h1>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#root">Home</a>
           </li>
           <li>
             <a href="#about">About</a>

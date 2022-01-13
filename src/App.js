@@ -5,13 +5,18 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav />
-        <div className="spacer"></div>
-        <h1 className="main-heading">
-          Welcome to TerminateVirus.
-          <br />
-          Disinfect & Sanitize
-        </h1>
+        <header>
+          <Nav />
+          <div className="spacer"></div>
+          <h1 className="main-heading">
+            Welcome to TerminateVirus.
+            <br />
+            Disinfect & Sanitize
+          </h1>
+        </header>
+        <main id="about">
+          <h2>About</h2>
+        </main>
       </div>
     );
   }
