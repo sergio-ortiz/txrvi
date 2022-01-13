@@ -5,7 +5,7 @@ class Nav extends React.Component {
     return (
       <nav>
         <h1>
-          <a href="#home">txrvi</a>
+          <a href="#root">txrvi</a>
         </h1>
         <ul>
           <li>

@@ -6,9 +6,8 @@
 }
 
 /* Utils */
-
 .spacer {
-  height: 4rem;
+  height: 100px;
 }
 
 .container {
@@ -29,6 +28,7 @@ nav {
   background: #333;
   color: #fff;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -63,6 +63,9 @@ li a:hover {
   border-bottom: 1px solid white;
 }
 
+.main-heading {
+  margin-top: 100px;
+}
 /* About */
 #about h2 {
   padding: 1rem;
