@@ -108,7 +108,10 @@ class App extends React.Component {
                 https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention-H.pdf
               </a>
             </p>
+            <div id="epa" class="logo-box"></div>
+            <div id="cdc" class="logo-box"></div>
           </div>
+          <div className="clearfix"></div>
         </main>
       </div>
     );
