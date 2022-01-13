@@ -64,10 +64,14 @@ li a:hover {
 }
 
 .main-heading {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 
 /* About */
+#about {
+  padding-top: 100px;
+}
+
 #about h2 {
   padding: 1rem;
   text-align: center;
