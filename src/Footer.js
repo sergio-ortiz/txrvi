@@ -7,14 +7,9 @@ function Footer() {
         <div className="spacer"></div>
         <h2>Contact Us</h2>
 
-        <form
-          id="myForm"
-          name="contact"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
-          <input name="bot-field" />
+        <form id="myForm" name="contact" method="POST">
+          <input type="hidden" name="form-name" value="contact" />
+
           <input
             id="name"
             type="text"
