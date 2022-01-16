@@ -178,10 +178,6 @@ li a:hover {
   outline: none;
 }
 
-#myForm input[name="bot-field"] {
-  display: none;
-}
-
 #myForm input[type="submit"] {
   background-color: deepskyblue;
   color: #fff;
