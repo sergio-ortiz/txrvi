@@ -3,21 +3,45 @@ import OneTimeServiceTable from "./One-time-service-table";
 import SubscriptionsTable from "./Subscriptions-table";
 
 class Prices extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      defaultTab: true,
+    };
+  }
+
+  handleClick(defaultTab) {
+    this.setState({ defaultTab });
+  }
+
   render() {
+    const table = this.state.defaultTab ? (
+      <OneTimeServiceTable />
+    ) : (
+      <SubscriptionsTable />
+    );
+
     return (
       <section id="prices">
         <div className="container">
           <div className="spacer"></div>
           <h2>Pricing</h2>
-          <div id="one-time-service-tab" className="tab">
+          <div
+            id="one-time-service-tab"
+            className="tab"
+            onClick={() => this.handleClick(true)}
+          >
             one-time service
           </div>
-          <div id="subscriptions-tab" className="tab">
+          <div
+            id="subscriptions-tab"
+            className="tab"
+            onClick={() => this.handleClick(false)}
+          >
             recurring service
           </div>
           <div className="clearfix"></div>
-          <OneTimeServiceTable />
-          <SubscriptionsTable />
+          {table}
           <div className="spacer"></div>
         </div>
       </section>
