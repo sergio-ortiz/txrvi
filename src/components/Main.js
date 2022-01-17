@@ -95,8 +95,8 @@ function Main() {
             https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention-H.pdf
           </a>
         </p>
-        <div id="epa" class="logo-box"></div>
-        <div id="cdc" class="logo-box"></div>
+        <div id="epa" className="logo-box"></div>
+        <div id="cdc" className="logo-box"></div>
       </div>
       <div className="clearfix"></div>
     </main>
