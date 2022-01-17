@@ -30,9 +30,11 @@ function Footer() {
             name="zipcode"
             placeholder="zipcode"
           />
-          <textarea name="message" id="message">
-            message
-          </textarea>
+          <textarea
+            placeholder="message"
+            name="message"
+            id="message"
+          ></textarea>
           <input type="submit" value="Send" />
         </form>
 
