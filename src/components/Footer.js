@@ -51,7 +51,7 @@ function Footer() {
         </a>
       </div>
       <div className="copyright">
-        <p>&copy; Copyright All Rights Reserved TerminateVirus 2021</p>
+        <p>&copy; Copyright All Rights Reserved TerminateVirus 2022</p>
       </div>
       <div className="spacer"></div>
     </footer>
