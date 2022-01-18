@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+li a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}

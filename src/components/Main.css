@@ -1,0 +1,33 @@
+#about {
+  padding-top: 100px;
+}
+
+#about h2 {
+  padding: 1rem;
+  text-align: center;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+#about p {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+.logo-box {
+  margin-top: 2rem;
+  padding: 5rem;
+  width: 50%;
+  height: 33vh;
+  float: left;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#epa {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f1/EPA_logo.svg");
+}
+#cdc {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5a/CDC_logo_electronic_color_name.jpg");
+}

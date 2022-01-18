@@ -1,0 +1,61 @@
+#contact {
+  background: #000;
+  color: #fff;
+}
+
+#contact h2 {
+  padding: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#myForm {
+  margin-bottom: 4rem;
+}
+
+#myForm * {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  outline: none;
+}
+
+#myForm input[type="submit"] {
+  background-color: deepskyblue;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.numbers {
+  float: left;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.numbers a {
+  color: #fff;
+}
+
+.whatsapp-button {
+  margin-top: 2rem;
+  float: right;
+  background: #25d366;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+/* Copyright */
+
+.copyright {
+  padding-top: 30vh;
+  text-align: center;
+}

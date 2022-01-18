@@ -1,6 +1,7 @@
 import React from "react";
 import OneTimeServiceTable from "./One-time-service-table";
 import SubscriptionsTable from "./Subscriptions-table";
+import "./Prices.css";
 
 class Prices extends React.Component {
   constructor(props) {
