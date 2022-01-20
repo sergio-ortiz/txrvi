@@ -1,6 +1,8 @@
 import React from "react";
 import OneTimeServiceTable from "./One-time-service-table";
 import SubscriptionsTable from "./Subscriptions-table";
+import OneTimeServiceTab from "./One-time-service-tab";
+import SubscriptionsTab from "./Subscriptions-tab";
 import "./Prices.css";
 
 class Prices extends React.Component {
@@ -27,15 +29,8 @@ class Prices extends React.Component {
         <div className="container">
           <div className="spacer"></div>
           <h2>Pricing</h2>
-          <div className="tab" onClick={() => this.handleClick(true)}>
-            one-time service
-          </div>
-          <div
-            className="tab un-selected-tab"
-            onClick={() => this.handleClick(false)}
-          >
-            recurring service
-          </div>
+          <OneTimeServiceTab onClick={() => this.handleClick(true)} />
+          <SubscriptionsTab onClick={() => this.handleClick(false)} />
           <div className="clearfix"></div>
           {table}
           <div className="spacer"></div>
