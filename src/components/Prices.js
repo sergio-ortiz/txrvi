@@ -27,16 +27,11 @@ class Prices extends React.Component {
         <div className="container">
           <div className="spacer"></div>
           <h2>Pricing</h2>
-          <div
-            id="one-time-service-tab"
-            className="tab"
-            onClick={() => this.handleClick(true)}
-          >
+          <div className="tab" onClick={() => this.handleClick(true)}>
             one-time service
           </div>
           <div
-            id="subscriptions-tab"
-            className="tab"
+            className="tab un-selected-tab"
             onClick={() => this.handleClick(false)}
           >
             recurring service

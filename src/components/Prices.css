@@ -15,7 +15,7 @@
   float: left;
 }
 
-#subscriptions-tab {
+.un-selected-tab {
   background: #f4f4f4;
 }
 
