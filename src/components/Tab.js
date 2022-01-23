@@ -1,11 +1,12 @@
 import React from "react";
+import "./Tab.css";
 
-function OneTimeServiceTab(props) {
+function Tab(props) {
   return (
     <div className="tab" onClick={props.onClick}>
-      one-time service
+      {props.value}
     </div>
   );
 }
 
-export default OneTimeServiceTab;
+export default Tab;
