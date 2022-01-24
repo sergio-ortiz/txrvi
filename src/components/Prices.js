@@ -8,16 +8,16 @@ class Prices extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultTab: true,
+      tabs: [1, 0],
     };
   }
 
-  handleClick(defaultTab) {
-    this.setState({ defaultTab });
+  handleClick(tabs) {
+    this.setState({ tabs });
   }
 
   render() {
-    const table = this.state.defaultTab ? (
+    const table = this.state.tabs[0] ? (
       <OneTimeServiceTable />
     ) : (
       <SubscriptionsTable />
@@ -30,11 +30,11 @@ class Prices extends React.Component {
           <h2>Pricing</h2>
           <Tab
             value="one-time service"
-            onClick={() => this.handleClick(true)}
+            onClick={() => this.handleClick([1, 0])}
           />
           <Tab
             value="recurring service"
-            onClick={() => this.handleClick(false)}
+            onClick={() => this.handleClick([0, 1])}
           />
           <div className="clearfix"></div>
           {table}
