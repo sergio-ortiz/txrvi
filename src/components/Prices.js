@@ -12,20 +12,15 @@ class Prices extends React.Component {
     };
   }
 
-  handleClick(tabs) {
+  handleClick(tab) {
+    const tabs = [tab ? 0 : 1, tab];
     this.setState({ tabs });
   }
 
   render() {
     const tabs = this.state.tabs.map((e, i) => {
       const value = i ? "recurring service" : "one-time service";
-      return (
-        <Tab
-          key={i}
-          value={value}
-          onClick={() => this.handleClick([i ? 0 : 1, i])}
-        />
-      );
+      return <Tab key={i} value={value} onClick={() => this.handleClick(i)} />;
     });
 
     const table = this.state.tabs[0] ? (
