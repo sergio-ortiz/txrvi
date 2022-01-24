@@ -17,6 +17,17 @@ class Prices extends React.Component {
   }
 
   render() {
+    const tabs = this.state.tabs.map((e, i) => {
+      const value = i ? "recurring service" : "one-time service";
+      return (
+        <Tab
+          key={i}
+          value={value}
+          onClick={() => this.handleClick([i ? 0 : 1, i])}
+        />
+      );
+    });
+
     const table = this.state.tabs[0] ? (
       <OneTimeServiceTable />
     ) : (
@@ -28,14 +39,7 @@ class Prices extends React.Component {
         <div className="container">
           <div className="spacer"></div>
           <h2>Pricing</h2>
-          <Tab
-            value="one-time service"
-            onClick={() => this.handleClick([1, 0])}
-          />
-          <Tab
-            value="recurring service"
-            onClick={() => this.handleClick([0, 1])}
-          />
+          {tabs}
           <div className="clearfix"></div>
           {table}
           <div className="spacer"></div>
