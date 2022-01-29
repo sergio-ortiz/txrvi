@@ -20,7 +20,14 @@ class Prices extends React.Component {
   render() {
     const tabs = this.state.tabs.map((e, i) => {
       const value = i ? "recurring service" : "one-time service";
-      return <Tab key={i} value={value} onClick={() => this.handleClick(i)} />;
+      return (
+        <Tab
+          active={e}
+          key={i}
+          value={value}
+          onClick={() => this.handleClick(i)}
+        />
+      );
     });
 
     const table = this.state.tabs[0] ? (
