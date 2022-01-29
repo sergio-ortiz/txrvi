@@ -31,3 +31,10 @@
 #cdc {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5a/CDC_logo_electronic_color_name.jpg");
 }
+
+@media (max-width: 768px) {
+  .logo-box {
+    float: none;
+    width: 100%;
+  }
+}
