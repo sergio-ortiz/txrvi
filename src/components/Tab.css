@@ -1,5 +1,6 @@
 .tab {
   margin-top: 1rem;
+  background: #f4f4f4;
   border: 1px solid #f4f4f4;
   border-bottom: none;
   border-top-left-radius: 7px;
@@ -8,6 +9,6 @@
   float: left;
 }
 
-.un-selected-tab {
-  background: #f4f4f4;
+.active {
+  background: #fff;
 }
