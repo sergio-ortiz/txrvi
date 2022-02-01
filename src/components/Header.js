@@ -7,6 +7,7 @@ function Header() {
     <header>
       <Nav />
       <Hero />
+      <div className="spacer"></div>
       <h1 className="main-heading">
         Welcome to TerminateVirus.
         <br />
