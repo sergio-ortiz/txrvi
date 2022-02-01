@@ -1,5 +1,5 @@
 import React from "react";
-import { AdvancedImage } from "@cloudinary/react";
+import { AdvancedImage, responsive } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import "./Hero.css";
 
@@ -12,7 +12,12 @@ function Hero() {
   const coronaImage = cld.image("corona");
   coronaImage.format("auto").quality("auto");
 
-  return <AdvancedImage cldImg={coronaImage} />;
+  return (
+    <AdvancedImage
+      cldImg={coronaImage}
+      plugins={[responsive({ steps: 200 })]}
+    />
+  );
 }
 
 export default Hero;
