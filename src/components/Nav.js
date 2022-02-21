@@ -1,12 +1,28 @@
 import React from "react";
+import MobileMenu from "./Mobile-menu";
 import styles from "./Nav.module.css";
 
 class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      display: false,
+    };
+  }
+
+  handleClick = () => {
+    this.setState({ display: !this.state.display });
+  };
+
   render() {
     return (
       <nav className={styles.navbar}>
         <h1>
-          <a href="#root" className={styles.branding}>
+          <a
+            href="#root"
+            className={styles.branding}
+            onClick={this.state.display ? this.handleClick : () => {}}
+          >
             txrvi
           </a>
         </h1>
@@ -32,11 +48,12 @@ class Nav extends React.Component {
             </a>
           </li>
         </ul>
-        <div className={styles.hamburger}>
+        <div className={styles.hamburger} onClick={this.handleClick}>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
         </div>
+        {this.state.display ? <MobileMenu onClick={this.handleClick} /> : ""}
       </nav>
     );
   }
