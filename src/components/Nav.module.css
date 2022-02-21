@@ -1,4 +1,4 @@
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 4px;
@@ -9,36 +9,33 @@ nav {
   width: 100%;
 }
 
-h1 {
+.branding {
   font-size: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px;
-}
-
-h1 a {
   text-decoration: none;
   color: white;
 }
 
-ul {
+.navLinks {
   display: flex;
   flex-direction: row;
   margin: 2px 5px 0;
   list-style: none;
 }
 
-li {
+.navLinkItem {
   margin: 10px;
 }
 
-li a {
+.navLinkText {
   font-size: 18px;
   text-decoration: none;
   color: #ccc;
 }
 
-li a:hover {
+.navLinkText:hover {
   color: white;
   border-bottom: 1px solid white;
 }

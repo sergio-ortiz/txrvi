@@ -1,14 +1,14 @@
 import React from "react";
 import Nav from "./Nav";
 import Hero from "./Hero";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
     <header>
       <Nav />
       <Hero />
-      <div className="spacer"></div>
-      <h1 className="main-heading">
+      <h1 className={styles.mainHeading}>
         Welcome to TerminateVirus.
         <br />
         Disinfect & Sanitize
