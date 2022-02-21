@@ -39,3 +39,25 @@
   color: white;
   border-bottom: 1px solid white;
 }
+
+.hamburger {
+  display: none;
+  margin-right: 4px;
+}
+
+.bar {
+  background: #fff;
+  height: 3px;
+  width: 30px;
+  margin-top: 6px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

@@ -32,6 +32,11 @@ class Nav extends React.Component {
             </a>
           </li>
         </ul>
+        <div className={styles.hamburger}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
       </nav>
     );
   }
